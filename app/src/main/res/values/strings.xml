@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Tap Counter</string>
+    <string name="starting_counter">0</string>
     <string name="tap_button_text">TAP</string>
 </resources>
