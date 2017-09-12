@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Counter mCounter;
 
     /**
-     * Called whenever teh TapCounter app is redrawn
+     * Called whenever the TapCounter app is redrawn
      *
      * @param savedInstanceState A bundle of information from which previously saved state can be restored
      */
@@ -29,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i(tag, "onCreate successfully terminated");
     }
 
+    /**
+     * Increases the {@link Counter} by one and refreshes the count text view to match the {@link Counter} value
+     * Called when the tap button is clicked
+     * @param view The view that calls the method
+     */
     public void tapButton(View view) {
         mCounter.setCount(mCounter.incrementCount());
         mCountTextView.setText(String.valueOf(mCounter.getCount()));
